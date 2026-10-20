@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Anush Aryal CG360/560 -->
+<html>
+<head>
+<title>Breakout Game - Anush Aryal</title>
+<style>
+  body { font-family: sans-serif; background: #111; color: #fff; text-align: center; margin-top: 20px; }
+  #scoreboard { font-size: 22px; margin: 10px; font-weight: bold; color: #00ffcc; }
+  #gamestatus { font-size: 24px; margin: 10px; font-weight: bold; color: #ffcc00; }
+  canvas { border: 2px solid #555; background: #000; border-radius: 8px; }
+  button { padding: 12px 24px; font-size: 18px; background: #4CAF50; color: white; border: none; border-radius: 6px; cursor: pointer; margin: 5px; }
+  button:hover { background: #45a049; }
+  #resetBtn { background: #d9534f; }
+  #resetBtn:hover { background: #c9302c; }
+</style>
+</head>
+<body>
+
+<h2>Anush Aryal - Breakout Game</h2>
+<div id="scoreboard">Score: 0 | Strikes: 0/3</div>
+<div id="gamestatus">Click Start and use A/D or Arrow Keys</div>
+<div>
+   <button onclick="startGame()">Start Game</button>
+   <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+</div>
+<br>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+
+<!-- Link to external JavaScript file -->
+<script src="breakout.js"></script>
+
+</body>
+</html>
